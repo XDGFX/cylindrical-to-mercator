@@ -13,7 +13,6 @@ multiplier = 2;
 
 % --- Main Script
 X = imread(source_file);
-imshow(X)
 
 % Split into top and bottom
 X_top = X(1:end/2, :);
@@ -28,8 +27,6 @@ width = size(X_top, 2);
 
 input_array = linspace(0, 1, scale * multiplier);
 output_array = multiplier .* input_array .^ index;
-
-plot(input_array, output_array)
 
 i = 1:round(scale * multiplier);
 
